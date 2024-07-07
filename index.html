@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img class="ico" src="./img/alura.png" alt=" foto ico alura">
+        </header>
+
+        <main class="content">
+            <section class="text-input-section">
+                <header class="header__section"><label for="textInput">Digite seu Texto</label></header>
+                <textarea class="textarea" placeholder="Digite aqui..." onclick="clearText()" rows="5"
+                    id="text_digitado" cols="30"></textarea>
+
+
+                <button class="button" onclick="encriptarTexto(); mostrarTag1()">Criptografar</button>
+                <button class="button" onclick="descriptarTexto(); mostrarTag2()">Descriptografar</button>
+                <button class="button" onclick="limparElementos()">Limpar textos</button>
+
+                <!-- Outros elementos de interface podem ser adicionados aqui -->
+            </section>
+
+            <section class="message_output_section">
+
+                <h1 id="tag1" style="display: none">Texto codificado</h1>
+                <h1 id="tag2" style="display: none">Texto decodificado</h1>
+                <!-- A ilustração pode ser implementada aqui como uma imagem ou SVG -->
+                <p id="output"></p>
+
+                <!-- Texto relacionado à ilustração -->
+
+                <img id="fotoAlura" style="display: none" src="./img/alura1.png" alt="foto alura1">
+                <button class="" onclick="copiarTexto()">Copiar</button>
+            </section>
+
+        </main>
+
+        <!-- O rodapé pode ser adicionado aqui, se necessário -->
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
